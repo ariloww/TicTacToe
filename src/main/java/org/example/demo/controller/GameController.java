@@ -3,6 +3,7 @@ package org.example.controller;
 import org.example.model.Game;
 import org.example.service.GameService;
 import org.springframework.beans.factory.annotation.Autowired;
+import org.springframework.http.ResponseEntity;
 import org.springframework.web.bind.annotation.*;
 
 @RestController
@@ -16,6 +17,10 @@ public class GameController {
     @PostMapping("/start")
     public Game startGame(@RequestParam String player1, @RequestParam String player2) {
         return gameService.createGame(player1, player2);
+    }
+    @GetMapping("/hello")
+    public String hello(){
+        return "Hello World";
     }
 
     // Make a move in the game

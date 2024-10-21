@@ -1,9 +1,8 @@
-package org.example.gametraining;
+package org.example.demo.gametraining;
 import org.springframework.boot.SpringApplication;
-import org.example.GameLogic.TicTacToe;
 import org.springframework.boot.autoconfigure.SpringBootApplication;
 
-@SpringBootApplication(scanBasePackages = "org.example")
+@SpringBootApplication
 public class GameTrainingApplication {
 
     public static void main(String[] args) {

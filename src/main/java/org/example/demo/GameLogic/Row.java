@@ -5,7 +5,7 @@ import jakarta.persistence.Embeddable;
 import java.util.ArrayList;
 import java.util.List;
 
-@Embeddable
+//@Embeddable
 public class Row {
 
     @ElementCollection
